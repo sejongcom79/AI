@@ -3,244 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 Google AI-Native 통합 교육 프로젝트</title>
+    <title>2026 Google AI-Native 통합 교육 프로젝트 | 윤정욱 교수</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap');
         body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; }
-        .gradient-bg { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
-        .google-blue { color: #4285F4; }
-        .google-red { color: #EA4335; }
-        .google-yellow { color: #FBBC05; }
-        .google-green { color: #34A853; }
-        [x-cloak] { display: none !important; }
+        .tab-active { border-bottom: 4px solid #4285F4; color: #4285F4; }
+        .gradient-blue { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .section-title { position: relative; display: inline-block; padding-bottom: 8px; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60%; height: 4px; background: #4285F4; border-radius: 2px; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-slate-50 text-slate-800">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center space-x-2">
-                    <span class="text-2xl font-extrabold tracking-tight">AI-Native <span class="text-blue-600">2026</span></span>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="flex space-x-1">
+                    <div class="w-3 h-3 rounded-full bg-[#4285F4]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#EA4335]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#FBBC05]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#34A853]"></div>
                 </div>
-                <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
-                    <a href="#vision" class="hover:text-blue-600 transition">비전</a>
-                    <a href="#platforms" class="hover:text-blue-600 transition">플랫폼</a>
-                    <a href="#curriculum" class="hover:text-blue-600 transition">커리큘럼</a>
-                    <a href="#instructors" class="hover:text-blue-600 transition">강사진</a>
-                </div>
-                <div>
-                    <a href="mailto:sejongcom@hanmail.net" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition">문의하기</a>
-                </div>
+                <span class="text-2xl font-extrabold tracking-tighter">AI-NATIVE <span class="text-blue-600">2026</span></span>
             </div>
+            <div class="hidden md:flex space-x-10 font-bold text-slate-600">
+                <a href="#vision" class="hover:text-blue-600 transition">비전</a>
+                <a href="#curriculum" class="hover:text-blue-600 transition">커리큘럼</a>
+                <a href="#instructors" class="hover:text-blue-600 transition">강사진</a>
+                <a href="#workflow" class="hover:text-blue-600 transition">운영관리</a>
+            </div>
+            <a href="tel:010-3557-6073" class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-600 transition">010-3557-6073</a>
         </div>
     </nav>
 
-    <section id="vision" class="pt-32 pb-20 gradient-bg text-white">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Google AI-Native <br><span class="text-blue-400">미래 인재 양성 로드맵</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                "Zero-Cost, Hyper-Efficiency: 구글 AI 생태계로 완성하는 실무 패러다임의 혁신"
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <div class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl border border-white/20">
-                    <p class="text-sm text-gray-400">PBL 중심 교육</p>
-                    <p class="text-xl font-bold">실무 프로젝트</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl border border-white/20">
-                    <p class="text-sm text-gray-400">RAG 기반 행정</p>
-                    <p class="text-xl font-bold">할루시네이션 프리</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl border border-white/20">
-                    <p class="text-sm text-gray-400">하이브리드 제작</p>
-                    <p class="text-xl font-bold">생산성 500% 향상</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="platforms" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">핵심 활용 플랫폼 가이드</h2>
-                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition group">
-                    <div class="text-blue-500 mb-4 text-3xl group-hover:scale-110 transition"><i class="fas fa-magic"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Gemini</h3>
-                    <p class="text-gray-600 mb-4">기획 초안 작성, 다국어 번역, 코드 리뷰 및 멀티모달 데이터 분석의 핵심 파트너.</p>
-                </div>
-                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition group">
-                    <div class="text-red-500 mb-4 text-3xl group-hover:scale-110 transition"><i class="fas fa-book-open"></i></div>
-                    <h3 class="text-xl font-bold mb-3">NotebookLM</h3>
-                    <p class="text-gray-600 mb-4">방대한 문서를 학습하여 '근거 중심'의 지능형 사내 검색 서비스 및 기획 지원.</p>
-                </div>
-                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition group">
-                    <div class="text-yellow-500 mb-4 text-3xl group-hover:scale-110 transition"><i class="fas fa-microchip"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Google AI Studio</h3>
-                    <p class="text-gray-600 mb-4">특정 페르소나를 가진 맞춤형 AI 모델 설계 및 API 연동을 통한 워크플로우 자동화.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="curriculum" class="py-20 bg-gray-50" x-data="{ activeTab: 1 }">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">4대 특화 커리큘럼</h2>
-                <p class="text-gray-600">5개월(20주) 동안 진행되는 분야별 전문 교육 로드맵</p>
-            </div>
-
-            <div class="flex flex-wrap justify-center mb-10 gap-2">
-                <button @click="activeTab = 1" :class="activeTab === 1 ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-100'" class="px-6 py-3 rounded-full font-bold shadow-sm transition">AI 콘텐츠 전문가</button>
-                <button @click="activeTab = 2" :class="activeTab === 2 ? 'bg-red-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-100'" class="px-6 py-3 rounded-full font-bold shadow-sm transition">디지털 근로자 교육</button>
-                <button @click="activeTab = 3" :class="activeTab === 3 ? 'bg-yellow-500 text-white' : 'bg-white text-gray-600 hover:bg-gray-100'" class="px-6 py-3 rounded-full font-bold shadow-sm transition">게임 산업 프로그래밍</button>
-                <button @click="activeTab = 4" :class="activeTab === 4 ? 'bg-green-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-100'" class="px-6 py-3 rounded-full font-bold shadow-sm transition">게임 그래픽 기초</button>
-            </div>
-
-            <div class="bg-white rounded-3xl shadow-lg p-8">
-                <div x-show="activeTab === 1" x-cloak>
-                    <h3 class="text-2xl font-bold mb-6 flex items-center"><span class="w-2 h-8 bg-blue-600 rounded-full mr-3"></span>AI 활용 콘텐츠 개발 전문가 양성 (200h)</h3>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left">
-                            <thead class="border-b bg-gray-50">
-                                <tr>
-                                    <th class="p-4">모듈</th>
-                                    <th class="p-4">주요 내용</th>
-                                    <th class="p-4">플랫폼 및 활용</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y">
-                                <tr>
-                                    <td class="p-4 font-bold">M1. 전략 기획</td>
-                                    <td class="p-4 text-gray-600 text-sm">RAG 방법론, 타겟 페르소나 및 사용자 여정 설계</td>
-                                    <td class="p-4 text-blue-600 text-sm font-semibold">NotebookLM</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-4 font-bold">M2. 에이전트</td>
-                                    <td class="p-4 text-gray-600 text-sm">시스템 인스트럭션 설계, 전용 제작 에이전트 완성</td>
-                                    <td class="p-4 text-blue-600 text-sm font-semibold">AI Studio</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-4 font-bold">M4. 데이터분석</td>
-                                    <td class="p-4 text-gray-600 text-sm">Python 기반 성과 예측 시뮬레이션 및 시각화</td>
-                                    <td class="p-4 text-blue-600 text-sm font-semibold">Google Colab</td>
-                                </tr>
-                            </tbody>
-                        </table>
+    <header id="vision" class="pt-40 pb-24 gradient-blue text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-3/5">
+                    <span class="bg-blue-400/30 text-blue-100 px-4 py-1 rounded-full text-sm font-bold mb-6 inline-block uppercase tracking-widest">Global AI Standard</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-8">
+                        구글 AI 생태계로 <br><span class="text-blue-300">실무 패러다임을</span> 바꾸다.
+                    </h1>
+                    <p class="text-xl text-blue-100/80 mb-10 leading-relaxed max-w-2xl">
+                        Zero-Cost 기반의 초효율 워크플로우. 20년 경력의 IT 교육 노하우와 구글의 최신 AI 기술이 결합된 국내 유일의 통합 교육 프로젝트입니다.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#curriculum" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-extrabold text-lg hover:shadow-2xl transition">상세 커리큘럼 보기</a>
                     </div>
                 </div>
-
-                <div x-show="activeTab === 2" x-cloak>
-                    <h3 class="text-2xl font-bold mb-6 flex items-center"><span class="w-2 h-8 bg-red-600 rounded-full mr-3"></span>디지털 콘텐츠 활용 근로자 교육 (40h)</h3>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left text-sm">
-                            <thead class="border-b bg-gray-50">
-                                <tr>
-                                    <th class="p-4">모듈</th>
-                                    <th class="p-4">교육 목적</th>
-                                    <th class="p-4">활용 시나리오</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr>
-                                    <td class="p-4 font-bold">행정 비서</td>
-                                    <td class="p-4">반복 업무의 AI 자동화</td>
-                                    <td class="p-4 text-gray-600 font-semibold text-red-600">이메일/회의록 자동 추출 (Gemini)</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-4 font-bold">데이터 행정</td>
-                                    <td class="p-4">수식 없는 시각화 보고서</td>
-                                    <td class="p-4 text-gray-600 font-semibold text-red-600">지능형 시트 정제 (Sheets)</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="md:w-2/5 grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-white/20">
+                        <i class="fas fa-microchip text-3xl mb-4 text-blue-300"></i>
+                        <h3 class="font-bold text-lg mb-1">RAG 기반</h3>
+                        <p class="text-sm text-blue-100/60">환각 없는 AI 행정</p>
                     </div>
-                </div>
-
-                <div x-show="activeTab === 3" x-cloak>
-                    <h3 class="text-2xl font-bold mb-6 flex items-center text-yellow-600"><span class="w-2 h-8 bg-yellow-500 rounded-full mr-3"></span>게임 산업 프로그래밍 (60h)</h3>
-                    <p class="p-10 text-center text-gray-500">AI 페어 프로그래밍과 데이터 밸런싱 최적화 모듈 (AI Studio, Colab)</p>
-                </div>
-                <div x-show="activeTab === 4" x-cloak>
-                    <h3 class="text-2xl font-bold mb-6 flex items-center text-green-600"><span class="w-2 h-8 bg-green-600 rounded-full mr-3"></span>게임 그래픽 기초 (60h)</h3>
-                    <p class="p-10 text-center text-gray-500">하이브리드 텍스처링 및 비주얼 가이드 수립 모듈 (Imagen, Blender)</p>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-white/20">
+                        <i class="fas fa-code text-3xl mb-4 text-green-300"></i>
+                        <h3 class="font-bold text-lg mb-1">Agentic AI</h3>
+                        <p class="text-sm text-blue-100/60">지능형 자동화 구현</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-white/20">
+                        <i class="fas fa-chart-line text-3xl mb-4 text-yellow-300"></i>
+                        <h3 class="font-bold text-lg mb-1">Data Science</h3>
+                        <p class="text-sm text-blue-100/60">과학적 분석 최적화</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-white/20">
+                        <i class="fas fa-layer-group text-3xl mb-4 text-red-300"></i>
+                        <h3 class="font-bold text-lg mb-1">PBL 교육</h3>
+                        <p class="text-sm text-blue-100/60">현업 밀착형 프로젝트</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
+    <section id="curriculum" class="py-24" x-data="{ activeCourse: 1 }">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">5개월 통합 로드맵</h2>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 section-title">20주 통합 교육 상세 커리큘럼</h2>
+                <p class="text-lg text-slate-600">구글의 무료 AI 플랫폼을 활용한 단계별 역량 강화 로드맵</p>
             </div>
-            <div class="relative border-l-4 border-blue-100 ml-3 md:mx-auto md:max-w-4xl">
-                <div class="mb-10 ml-6 relative">
-                    <span class="absolute -left-[30px] top-1 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">1</span>
-                    <h4 class="font-bold text-lg">도입기 (1~4주)</h4>
-                    <p class="text-gray-600">AI 리터러시 확립 및 개인별 NotebookLM 세팅</p>
-                </div>
-                <div class="mb-10 ml-6 relative">
-                    <span class="absolute -left-[30px] top-1 bg-blue-400 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">2</span>
-                    <h4 class="font-bold text-lg">성장기 (5~8주)</h4>
-                    <p class="text-gray-600">에이전틱 워크플로우 설계 및 AI Studio 에이전트 완성</p>
-                </div>
-                <div class="mb-10 ml-6 relative">
-                    <span class="absolute -left-[30px] top-1 bg-blue-200 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">5</span>
-                    <h4 class="font-bold text-lg">완성기 (17~20주)</h4>
-                    <p class="text-gray-600">캡스톤 프로젝트 완수 및 최종 데모 데이</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="instructors" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">강사진 및 운영 거버넌스</h2>
+            <div class="flex flex-wrap border-b border-slate-200 mb-12">
+                <button @click="activeCourse = 1" :class="activeCourse === 1 ? 'tab-active' : 'text-slate-400'" class="px-8 py-4 font-extrabold transition text-lg">01. 콘텐츠 전문가 (200h)</button>
+                <button @click="activeCourse = 2" :class="activeCourse === 2 ? 'tab-active' : 'text-slate-400'" class="px-8 py-4 font-extrabold transition text-lg">02. 근로자 교육 (40h)</button>
+                <button @click="activeCourse = 3" :class="activeCourse === 3 ? 'tab-active' : 'text-slate-400'" class="px-8 py-4 font-extrabold transition text-lg">03. 게임 프로그래밍 (60h)</button>
+                <button @click="activeCourse = 4" :class="activeCourse === 4 ? 'tab-active' : 'text-slate-400'" class="px-8 py-4 font-extrabold transition text-lg">04. 게임 그래픽 (60h)</button>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="flex items-start space-x-6 p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="w-24 h-24 bg-gray-200 rounded-full overflow-hidden flex-shrink-0">
-                        <img src="https://via.placeholder.com/150" alt="윤정욱 교수">
+
+            <div class="bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 p-10 border border-slate-100">
+                
+                <div x-show="activeCourse === 1" x-transition>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full font-bold text-sm">200시간 / 20주</span>
+                        <h3 class="text-3xl font-extrabold">AI 활용 콘텐츠 개발 전문가 양성</h3>
                     </div>
-                    <div>
-                        <h4 class="text-xl font-extrabold mb-1">윤정욱 교수 <span class="text-sm font-normal text-gray-500">총괄 디렉터</span></h4>
-                        <p class="text-gray-600 text-sm mb-4">20년 IT 교육 경력 기반 전체 설계. 디지털 행정 및 데이터 분석 모듈 총괄.</p>
-                        <div class="text-blue-600 text-sm space-y-1">
-                            <p><i class="fas fa-envelope mr-2"></i>sejongcom@hanmail.net</p>
-                            <p><i class="fas fa-phone mr-2"></i>010-3557-6073</p>
+                    <div class="space-y-6">
+                        <div class="bg-slate-50 p-6 rounded-2xl border-l-8 border-blue-600">
+                            <h4 class="text-xl font-extrabold mb-4 text-blue-900">1개월: 지능형 기획 및 지식 기반 (1~4주)</h4>
+                            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                                <div>
+                                    <p class="font-bold text-slate-500 mb-2 underline">학습 주제</p>
+                                    <ul class="space-y-1 text-slate-700">
+                                        <li>• 구글 AI 생태계 및 멀티모달 프롬프트 공식</li>
+                                        <li>• NotebookLM 기반 RAG(검색증강생성) 전략</li>
+                                        <li>• 타겟 페르소나 및 사용자 여정 맵 설계</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-500 mb-2 underline">플랫폼 및 활용법</p>
+                                    <p class="text-slate-700"><strong>[NotebookLM]</strong> 수만 페이지의 문서를 학습시켜 할루시네이션 없는 기획서 추출</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border-l-8 border-blue-400">
+                            <h4 class="text-xl font-extrabold mb-4 text-blue-900">2개월: 에이전틱 AI 워크플로우 (5~8주)</h4>
+                            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                                <div>
+                                    <p class="font-bold text-slate-500 mb-2 underline">학습 주제</p>
+                                    <ul class="space-y-1 text-slate-700">
+                                        <li>• Google AI Studio 시스템 인스트럭션 설계</li>
+                                        <li>• 퓨샷(Few-shot) 학습 및 전용 에이전트 구축</li>
+                                        <li>• 제작 공정 자동화 연쇄(Chaining) 기법</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-500 mb-2 underline">플랫폼 및 활용법</p>
+                                    <p class="text-slate-700"><strong>[AI Studio]</strong> 특정 화풍과 어조를 유지하는 전용 작가/기획자 에이전트 구축</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-2xl border-l-8 border-blue-700">
+                            <h4 class="text-xl font-extrabold mb-4 text-blue-900">4개월: 데이터 기반 성과 분석 (13~16주)</h4>
+                            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                                <div>
+                                    <p class="font-bold text-blue-500 mb-2 underline">학습 주제 (윤정욱 교수 특화)</p>
+                                    <ul class="space-y-1 text-slate-700 font-semibold">
+                                        <li>• Python/Pandas 기반 콘텐츠 성과 데이터 분석</li>
+                                        <li>• AI 시뮬레이션을 통한 난이도 및 성공 예측</li>
+                                        <li>• 데이터 시각화 리포트 및 인사이트 도출</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-blue-500 mb-2 underline">플랫폼 및 활용법</p>
+                                    <p class="text-slate-700"><strong>[Google Colab]</strong> 파이썬 코딩을 통해 콘텐츠 데이터를 과학적으로 검증하고 시각화</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="p-8 bg-blue-600 text-white rounded-3xl shadow-md">
-                    <h4 class="text-xl font-extrabold mb-4">운영 협업 시스템</h4>
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex items-center"><i class="fas fa-link mr-3 text-blue-200"></i><strong>Chain-PBL 구현:</strong> 기획 시나리오와 개발/그래픽의 연계</li>
-                        <li class="flex items-center"><i class="fas fa-comments mr-3 text-blue-200"></i><strong>Live Support:</strong> 깃허브 Issues 기반 24시간 피드백</li>
-                        <li class="flex items-center"><i class="fas fa-chart-line mr-3 text-blue-200"></i><strong>KPI 관리:</strong> AI 활용 비중 70% 이상 목표 관리</li>
-                    </ul>
+
+                <div x-show="activeCourse === 2" x-transition>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-red-100 text-red-700 px-4 py-1.5 rounded-full font-bold text-sm">40시간 / 20주 (격주)</span>
+                        <h3 class="text-3xl font-extrabold">디지털 콘텐츠 활용 근로자 교육</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h5 class="font-extrabold text-red-700 mb-3">Module 1: 스마트 행정 비서</h5>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-4">반복적 행정 업무를 제미나이(Gemini)와 연동하여 이메일, 요약, 번역을 10초 만에 완결하는 프로세스</p>
+                            <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border">플랫폼: Gemini / Docs</span>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h5 class="font-extrabold text-red-700 mb-3">Module 2: 지능형 사내 지식 관리</h5>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-4">사내 매뉴얼과 규정을 NotebookLM에 업로드하여 즉각적인 업무 질의응답 시스템 구축</p>
+                            <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border">플랫폼: NotebookLM</span>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h5 class="font-extrabold text-red-700 mb-3">Module 3: 데이터 행정 혁신</h5>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-4">수식이나 복잡한 엑셀 기능 없이 AI에게 질문하여 데이터를 시각화하고 보고서를 자동 작성</p>
+                            <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border">플랫폼: Google Sheets / Colab</span>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h5 class="font-extrabold text-red-700 mb-3">Module 4: 비주얼 기획 제안서</h5>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-4">기획안 초안만으로 Gamma와 구글 슬라이드를 활용해 전문적인 레이아웃의 제안서 5분 컷 제작</p>
+                            <span class="text-xs font-bold text-slate-400 bg-white px-3 py-1 rounded-full border">플랫폼: Gamma / Google Slides</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-show="activeCourse === 3" x-transition>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-yellow-100 text-yellow-700 px-4 py-1.5 rounded-full font-bold text-sm">60시간 / 단기 집중</span>
+                        <h3 class="text-3xl font-extrabold text-yellow-900">게임 산업 프로그래밍: AI 페어 코딩</h3>
+                    </div>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center gap-6 p-4 bg-yellow-50 rounded-xl">
+                            <span class="w-20 font-extrabold text-yellow-700">1~6단계</span>
+                            <p class="flex-1 font-bold">AI 아키텍처 설계: 제미나이와 함께 클래스 구조 및 게임 루프 논리 검증</p>
+                            <span class="text-xs bg-white px-3 py-1 rounded-lg">AI Studio</span>
+                        </div>
+                        <div class="flex items-center gap-6 p-4 bg-yellow-50 rounded-xl">
+                            <span class="w-20 font-extrabold text-yellow-700">7~13단계</span>
+                            <p class="flex-1 font-bold">AI 페어 프로그래밍: Unity/C# 코드 생성 및 자동 리팩토링 실습</p>
+                            <span class="text-xs bg-white px-3 py-1 rounded-lg">Gemini / Cursor</span>
+                        </div>
+                        <div class="flex items-center gap-6 p-4 bg-yellow-50 rounded-xl">
+                            <span class="w-20 font-extrabold text-yellow-700">14~20단계</span>
+                            <p class="flex-1 font-bold">데이터 밸런싱: 게임 로그 분석을 통한 난이도 곡선 및 수치 최적화</p>
+                            <span class="text-xs bg-white px-3 py-1 rounded-lg">Google Colab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-show="activeCourse === 4" x-transition>
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-green-100 text-green-700 px-4 py-1.5 rounded-full font-bold text-sm">60시간 / 단기 집중</span>
+                        <h3 class="text-3xl font-extrabold text-green-900">게임 그래픽 기초: 하이브리드 파이프라인</h3>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-green-50 p-6 rounded-2xl">
+                            <div class="text-2xl mb-4 text-green-600"><i class="fas fa-paint-brush"></i></div>
+                            <h6 class="font-extrabold mb-2 underline">1단계: 컨셉 가이드</h6>
+                            <p class="text-xs leading-relaxed text-slate-600 italic">"모호한 비주얼 영감을 AI 이미지 분석을 통해 정교한 아트 스타일 가이드로 문서화합니다."</p>
+                        </div>
+                        <div class="bg-green-50 p-6 rounded-2xl">
+                            <div class="text-2xl mb-4 text-green-600"><i class="fas fa-cube"></i></div>
+                            <h6 class="font-extrabold mb-2 underline">2단계: 하이브리드 애셋</h6>
+                            <p class="text-xs leading-relaxed text-slate-600 italic">"AI로 생성된 Seamless 텍스처 소스를 Blender 모델링에 직접 입히는 실무 기술을 익힙니다."</p>
+                        </div>
+                        <div class="bg-green-50 p-6 rounded-2xl">
+                            <div class="text-2xl mb-4 text-green-600"><i class="fas fa-video"></i></div>
+                            <h6 class="font-extrabold mb-2 underline">3단계: 최종 연출</h6>
+                            <p class="text-xs leading-relaxed text-slate-600 italic">"AI 가이드를 기반으로 한 조명(Lighting) 및 씬 시네마틱 렌더링으로 퀄리티를 극대화합니다."</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-gray-900 text-gray-400 text-center">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="mb-4 font-bold text-white uppercase tracking-widest">AI-Native Excellence Center</p>
-            <p class="text-sm mb-6">서울특별시 (2026) | 윤정욱 교수팀</p>
-            <div class="flex justify-center space-x-6 mb-8">
-                <a href="#" class="hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fab fa-google text-xl"></i></a>
+    <section id="instructors" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-4 section-title after:bg-blue-400">전문가 라인업 (SME Group)</h2>
+                    <p class="text-slate-400">현업 전문가와 교수진이 협업하는 최강의 교육 파트너십</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-md">
+                    <p class="text-xs text-slate-500 uppercase tracking-widest mb-1">Inquiry</p>
+                    <p class="text-xl font-extrabold">010-3557-6073</p>
+                    <p class="text-sm text-blue-400 underline italic">윤정욱 교수 (총괄)</p>
+                </div>
             </div>
-            <p class="text-xs">&copy; 2026 AI-Native Education Group. All rights reserved.</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group bg-white/5 border border-white/10 p-8 rounded-[2.5rem] hover:bg-blue-600/20 transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-xl group-hover:scale-110 transition"><i class="fas fa-user-tie"></i></div>
+                    <h5 class="text-xl font-extrabold mb-1">윤정욱 교수</h5>
+                    <p class="text-blue-400 text-sm font-bold mb-4">마스터 디렉터</p>
+                    <p class="text-slate-400 text-xs leading-relaxed">• 20년 IT 교육 경력<br>• 디지털 행정 및 데이터 분석 총괄<br>• 구글 AI 생태계 설계자</p>
+                </div>
+                <div class="group bg-white/5 border border-white/10 p-8 rounded-[2.5rem] hover:bg-red-600/20 transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-xl group-hover:scale-110 transition"><i class="fas fa-clapperboard"></i></div>
+                    <h5 class="text-xl font-extrabold mb-1">콘텐츠 SME</h5>
+                    <p class="text-red-400 text-sm font-bold mb-4">멀티모달 전문가</p>
+                    <p class="text-slate-400 text-xs leading-relaxed">• 현업 AI 프로덕션 PD<br>• 구글 랩스 기반 영상 연출<br>• 프롬프트 엔지니어링 실무</p>
+                </div>
+                <div class="group bg-white/5 border border-white/10 p-8 rounded-[2.5rem] hover:bg-yellow-600/20 transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-xl group-hover:scale-110 transition"><i class="fas fa-gamepad"></i></div>
+                    <h5 class="text-xl font-extrabold mb-1">게임 테크 SME</h5>
+                    <p class="text-yellow-400 text-sm font-bold mb-4">프로그래밍 에반젤리스트</p>
+                    <p class="text-slate-400 text-xs leading-relaxed">• Unity/C# 현업 개발자<br>• AI API 기반 게임 로직 설계<br>• 코드 리팩토링 전문가</p>
+                </div>
+                <div class="group bg-white/5 border border-white/10 p-8 rounded-[2.5rem] hover:bg-green-600/20 transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-xl group-hover:scale-110 transition"><i class="fas fa-vr-cardboard"></i></div>
+                    <h5 class="text-xl font-extrabold mb-1">비주얼 아트 SME</h5>
+                    <p class="text-green-400 text-sm font-bold mb-4">하이브리드 그래픽 전문가</p>
+                    <p class="text-slate-400 text-xs leading-relaxed">• 3D 아트 디렉터<br>• AI 기반 텍스처링 파이프라인<br>• 에셋 최적화 및 렌더링 지도</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 section-title">성공적인 교육 운영 거버넌스</h2>
+                <p class="text-lg text-slate-600 font-semibold italic">"강사진은 각자의 수업이 아닌, 하나의 워크플로우로 연결됩니다."</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="relative p-10 bg-slate-50 rounded-[3rem] border border-slate-100 overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-blue-100/50 rounded-bl-[3rem] transition-all group-hover:scale-110"></div>
+                    <h5 class="text-xl font-extrabold mb-6 flex items-center"><span class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs mr-3">01</span> Chain-PBL</h5>
+                    <p class="text-sm text-slate-600 leading-relaxed italic">
+                        기획 강사가 만든 <strong>시나리오 데이터</strong>를 -> 개발 강사가 <strong>로직 구현</strong>에 쓰고 -> 그래픽 강사가 <strong>에셋 제작</strong>에 활용하는 톱니바퀴형 실무 연쇄 교육을 구현합니다.
+                    </p>
+                </div>
+                <div class="relative p-10 bg-slate-50 rounded-[3rem] border border-slate-100 overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-green-100/50 rounded-bl-[3rem] transition-all group-hover:scale-110"></div>
+                    <h5 class="text-xl font-extrabold mb-6 flex items-center"><span class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center text-xs mr-3">02</span> Live Sync</h5>
+                    <p class="text-sm text-slate-600 leading-relaxed italic">
+                        강사진은 매주 구글 미트(Meet) 정기 싱크업을 통해 교육생의 성취도를 체크하고, <strong>깃허브(GitHub) Issues</strong> 기능을 활용해 24시간 코드 리뷰 및 실무 피드백을 제공합니다.
+                    </p>
+                </div>
+                <div class="relative p-10 bg-slate-50 rounded-[3rem] border border-slate-100 overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-red-100/50 rounded-bl-[3rem] transition-all group-hover:scale-110"></div>
+                    <h5 class="text-xl font-extrabold mb-6 flex items-center"><span class="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center text-xs mr-3">03</span> KPI 관리</h5>
+                    <p class="text-sm text-slate-600 leading-relaxed italic">
+                        단순 수업 진행이 아닌, 모든 학생의 포트폴리오에 <strong>AI 활용 비중 70% 이상</strong> 달성을 목표로 하며, 최종 결과물을 깃허브 웹사이트(GitHub Pages)로 즉시 배포합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                <div>
+                    <h4 class="text-2xl font-extrabold mb-6 text-slate-900">AI-Native Excellence Center</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-sm">
+                        우리는 기술의 도예가가 아닌, 시스템의 건축가를 양성합니다. 구글의 AI 생태계 안에서 당신의 가능성을 무한대로 확장하세요.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-16">
+                    <div>
+                        <p class="font-extrabold text-slate-900 mb-6 uppercase tracking-widest text-xs">Menu</p>
+                        <ul class="space-y-3 text-sm text-slate-500 font-semibold">
+                            <li><a href="#vision" class="hover:text-blue-600">비전</a></li>
+                            <li><a href="#curriculum" class="hover:text-blue-600">커리큘럼</a></li>
+                            <li><a href="#instructors" class="hover:text-blue-600">강사진</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-extrabold text-slate-900 mb-6 uppercase tracking-widest text-xs">Contact</p>
+                        <ul class="space-y-3 text-sm text-slate-500 font-semibold">
+                            <li><i class="fas fa-user-circle mr-2"></i><strong>윤정욱 교수</strong></li>
+                            <li><i class="fas fa-envelope mr-2"></i>sejongcom@hanmail.net</li>
+                            <li><i class="fas fa-phone mr-2"></i>010-3557-6073</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-slate-200 pt-10 gap-6">
+                <p class="text-xs text-slate-400 font-medium italic">&copy; 2026 AI-Native Education Group. All Rights Reserved.</p>
+                <div class="flex space-x-4 text-slate-300">
+                    <i class="fab fa-github hover:text-slate-900 transition cursor-pointer"></i>
+                    <i class="fab fa-google hover:text-[#4285F4] transition cursor-pointer"></i>
+                    <i class="fab fa-linkedin hover:text-[#0077B5] transition cursor-pointer"></i>
+                </div>
+            </div>
         </div>
     </footer>
 
